@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<script>
+
+		/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+		function myFunction() {
+
+  			var x = document.getElementById("myTopnav");
+  			
+  			if (x.className === "topnav") {
+    			x.className += " responsive";
+  			} else {
+   				x.className = "topnav";
+  			}
+		}
+
+		/* When the user clicks on the button, toggle between hiding and showing the dropdown content */
+		function myFunction() {
+  			document.getElementById("myDropdown").classList.toggle("show");
+		}
+
+		// Close the dropdown if the user clicks outside of it
+		window.onclick = function(e) {
+  			if (!e.target.matches('.dropbtn')) {
+  				var myDropdown = document.getElementById("myDropdown");
+    			if (myDropdown.classList.contains('show')) {
+      				myDropdown.classList.remove('show');
+    			}
+  			}
+		}
+	
+	</script>
+
+	<title>Instructor</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+<body>
+	<main>
+
+		<div class="logo">
+			<a href="file:///C:/wamp64/www/fitness/templates/index.html">
+				<img src="logo.png">
+			</a>		
+		</div>
+		
+		<div class="topnav" id="myTopnav">
+  			<a href="file:///C:/wamp64/www/fitness/templates/index.html" class="active">Acasă</a>
+ 			
+			<div class="dropdown">
+  				<button class="dropbtn" onclick="myFunction()">Instructori
+    				<i class="fa fa-caret-down"></i>
+  				</button>
+  				
+  				<div class="dropdown-content" id="myDropdown">
+    				<a href="#">Timeea</a>  <br>
+    				<a href="#">Vali</a>    <br>
+    				<a href="#">Iulian</a>  <br> 
+            <a href="#">Melania</a>
+  				</div>
+  			</div>
+
+  			<a href="file:///C:/wamp64/www/fitness/templates/program.html">Clase</a>
+  			<a href="https://docs.google.com/forms/d/1C5nc2OTiOPr8eUSsri9UPU-YIqMLys5RKquYLVg4AjA/viewform?edit_requested=true" target="_blank">Contact</a>
+  			<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    			<i class="fa fa-bars"></i>
+ 			</a>
+		</div>
+
+		
+
+
+	</main>
+</body>
+</html>

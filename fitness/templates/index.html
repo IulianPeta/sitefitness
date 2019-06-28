@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<script>
+
+		/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+		function myFunction() {
+
+  			var x = document.getElementById("myTopnav");
+  			
+  			if (x.className === "topnav") {
+    			x.className += " responsive";
+  			} else {
+   				x.className = "topnav";
+  			}
+		}
+
+		/* When the user clicks on the button, toggle between hiding and showing the dropdown content */
+		function myFunction() {
+  			document.getElementById("myDropdown").classList.toggle("show");
+		}
+
+		// Close the dropdown if the user clicks outside of it
+		window.onclick = function(e) {
+  			if (!e.target.matches('.dropbtn')) {
+  				var myDropdown = document.getElementById("myDropdown");
+    			if (myDropdown.classList.contains('show')) {
+      				myDropdown.classList.remove('show');
+    			}
+  			}
+		}
+	
+	</script>
+
+	<title>Index</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+<body>
+	<main>
+
+		<div class="logo">
+			<a href="file:///C:/wamp64/www/fitness/templates/index.html">
+				<img src="logo.png">
+			</a>		
+		</div>
+		
+		<div class="topnav" id="myTopnav">
+  			<a href="file:///C:/wamp64/www/fitness/templates/index.html" class="active">Acasă</a>
+ 			
+
+ 			<div class="dropdown">
+  				<button class="dropbtn" onclick="myFunction()">Instructori
+    				<i class="fa fa-caret-down"></i>
+  				</button>
+  				
+  				<div class="dropdown-content" id="myDropdown">
+    				<a href="#">Timeea</a>	<br>
+    				<a href="#">Vali</a>	<br>
+    				<a href="#">Iulian</a>  <br>	
+    				<a href="#">Melania</a>
+  				</div>
+  			</div>
+
+  			<a href="file:///C:/wamp64/www/fitness/templates/program.html">Clase</a>
+  			<a href="https://docs.google.com/forms/d/1C5nc2OTiOPr8eUSsri9UPU-YIqMLys5RKquYLVg4AjA/viewform?edit_requested=true" target="_blank">Contact</a>
+  			<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    			<i class="fa fa-bars"></i>
+ 			</a>
+		</div>
+
+		<div class="sala">
+			<a href="#">
+				<img src="sala.jpg">
+			</a>		
+		</div>
+
+		<div id="text">
+			<p>Ce este Aerobic Modex? 
+			</p>
+
+			<p>Aerobic Modex îți oferă posiblitatea de a participa la diferite clase de aerobic și fitness.
+			</p>
+
+			<p>Oricine poate participa la clase. Avem Aerobic, HIIT, Fitness Bootcamp și Zumba.
+			</p>
+
+			<p>Dacă dorești să slăbești sau doar să te menții in formă, noi, echipa de la Aerobic Modex,
+ 			</p>
+
+ 			<p>te invităm să participi la clasele noastre.
+ 			</p>
+ 		</div>
+
+ 		<hr>
+
+ 		<div class="bar">
+			<a href="#">
+				<img src="bar.png">
+			</a>		
+		</div>
+
+		<hr>
+
+		<div class="front">
+			<a href="#">
+				<img src="front.jpg">
+			</a>		
+		</div>
+
+
+		<div id="text-index">
+			<p>Deci, ce este Aerobic Modex? </p>
+			<p>Răspunsul nostru: </p>
+			<p>Mișcare și Sănătate!</p>
+ 		</div>
+
+ 		<div class="facebook">
+			<a href="https://www.facebook.com/modexaerobic" target="_blank">
+				<img src="facebook.png">
+			</a>		
+		</div>
+
+
+
+
+	</main>
+</body>
+</html>
